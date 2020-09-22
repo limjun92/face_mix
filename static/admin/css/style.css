@@ -1,0 +1,78 @@
+@charset "utf-8";
+.base{
+    height: 100%;
+}
+
+h1 {
+    color:black;
+    font-family: 'Lobster', cursive;
+}
+.tri{
+    width: 0px;
+    height: 0px;
+    border-bottom: 100px solid transparent;
+    border-left: 1300px solid grey;
+}
+.subtitle{
+    padding-left: 40px;
+    height: 0px;
+}
+.container{
+    display:flex;
+    justify-content: center;
+}
+.all{
+    display:flex;
+}
+.left{
+    border : 5px solid grey;
+    border-radius:25px;
+    background-color: rgb(128,128,128,0.7);
+}
+.right{
+    width:40%
+}
+.navi{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    height:80px;
+
+    background-color: rgb(128,128,128);
+    color:blue;
+}
+.single{
+    margin: 5px;
+}
+
+.mix_one_back_ground{
+    height: 100%;
+    background-image: url('Zipcy_one.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+.mix_all_back_ground{
+    height: 100%;
+    background-image: url('Zipcy.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+.who_back_ground{
+    height: 100%;
+    background-image: url('Zipcy_who.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+html, body{
+    height:100%
+}
+
+img{
+    border-radius:30%
+}
