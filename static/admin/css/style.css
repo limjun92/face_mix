@@ -25,6 +25,7 @@ h1 {
     display:flex;
 }
 .left{
+    margin-left:20px;
     border : 5px solid grey;
     border-radius:25px;
     background-color: rgb(128,128,128,0.7);
@@ -40,7 +41,7 @@ h1 {
     height:80px;
 
     background-color: rgb(128,128,128);
-    color:blue;
+    color:red;
 }
 .single{
     margin: 5px;
@@ -75,4 +76,9 @@ html, body{
 
 img{
     border-radius:30%
+}
+
+.img_list{
+    display: flex;
+    flex-wrap:wrap
 }

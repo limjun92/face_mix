@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from page.module.img_cropped import img_crop, use_crop
 from page.module.opencv import use_opencv
 from page.module.base64 import use_base64
+import glob
 
 def index(request):
     return render(request, 'index.html')
@@ -160,3 +161,22 @@ def mixed_all(request, name1, name2, name3):
     me_no_3 = use_base64(me_no_3)
 
     return render(request, 'mix_all.html',{'me':me_re,'me_1':img_1,'me_2':img_2,'me_3':img_3,'me_no_1':me_no_1,'me_no_2':me_no_2,'me_no_3':me_no_3})
+
+def photo_list(request):
+    images = glob.glob('page/image/*.jpg')
+
+    images_list = []
+
+    for img in images:
+        rgb_image = img_crop(img)
+        img = img.split(".")[0].split('\\')[-1]
+        print(img)
+        try:
+            b,g,r = cv2.split(rgb_image)
+            rgb_image = cv2.merge([r,g,b])
+            rgb_image = use_base64(rgb_image)
+            images_list.append({'name':img,'img':rgb_image})
+        except:
+            print('error',img)
+
+    return render(request, 'photo_list.html',{'img_list':images_list})
