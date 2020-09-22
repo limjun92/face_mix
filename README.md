@@ -57,7 +57,6 @@
 # 개발환경
 
 * Django
-* Zipcy님의 그림을 활용하여 css구성
 
 # 사용기술
 
@@ -81,3 +80,9 @@
   * alpha blending을 수행
 
 [참고 사이트](https://www.learnopencv.com/face-morph-using-opencv-cpp-python/)
+
+## CSS
+
+* flex
+* Bootstrap
+* Zipcy님 그림
