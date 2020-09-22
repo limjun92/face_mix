@@ -170,7 +170,6 @@ def photo_list(request):
     for img in images:
         rgb_image = img_crop(img)
         img = img.split(".")[0].split('\\')[-1]
-        print(img)
         try:
             b,g,r = cv2.split(rgb_image)
             rgb_image = cv2.merge([r,g,b])

@@ -2,19 +2,21 @@
 {% load bootstrap4 %}
 {% block body %}
 
-<div class = 'subtitle'>
-    <h1>Photo_list</h1>
-</div>
-<div class='tri'>
-</div>
-<div class = 'img_list'>
-{% for img in img_list %}
-    <a href="{% url 'page:mixed' img.name %}">
-        <div>
-            <img src="{{ img.img }}">
+<div class = 'photo_list_back_ground'>
+    <div class = 'subtitle'>
+        <h1>Photo_list</h1>
+    </div>
+    <div class='tri'>
+    </div>
+    <div class = 'img_list'>
+    {% for img in img_list %}
+        <div class='single'>
+            <a href="{% url 'page:mixed' img.name %}">
+                <img src="{{ img.img }}">
+            </a>
         </div>
-    </a>
-{% endfor %}
+    {% endfor %}
+    </div>
 </div>
 
 {% endblock %}
