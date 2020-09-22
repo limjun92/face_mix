@@ -11,8 +11,25 @@
 * 성별 선택 후 사진 업로드
 
 ![index_page_2](/img/index_page_2.PNG)
-![mix_all_page](/img/mix_all_page.PNG)
-![mix_page](/img/mix_page.PNG)
-![mix_page_2](/img/mix_page_2.PNG)
-![photo_list_page](/img/photo_list_page.PNG)
+
+* 나와 닮은 상위 3명의 연예인을 알려준다
+
 ![who_page](/img/who_page.PNG)
+
+* 선택한 연예인과 Face를 Mix 해서 보여준다
+
+![mix_page](/img/mix_page.PNG)
+
+* 상위 3명의 연예인 모두와 합성을 해서 보여준다
+
+![mix_all_page](/img/mix_all_page.PNG)
+
+* 상위 3명이 아닌 다른 연예인을 선택해서 합성할 수 있다
+
+![photo_list_page](/img/photo_list_page.PNG)
+
+* 상위 3명이 아닌 다른 연예인을 선택해서 합성
+
+![mix_page_2](/img/mix_page_2.PNG)
+
+
